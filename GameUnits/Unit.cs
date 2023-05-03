@@ -12,7 +12,6 @@ namespace GameUnits
     {
         private readonly int movement;
         public virtual int Health { get; set; }
-
         public abstract float Cost { get; }
 
         // Construtor da Unit 
@@ -25,6 +24,11 @@ namespace GameUnits
         public void Move()
         {
             Console.WriteLine($"Moveu {movement} unidades.");
+        }
+
+        public override string ToString()
+        {
+            return $"{this.GetType().Name}: HP={Health} COST={Cost.ToString("F2")}";
         }
     }
 }

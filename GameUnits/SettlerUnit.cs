@@ -14,7 +14,7 @@ namespace GameUnits
             // Settle aqui...
         }
 
-        public SettlerUnit(int movement, int health) : base(1, 2)
+        public SettlerUnit() : base(1, 2)
         {
             // ...
         }
