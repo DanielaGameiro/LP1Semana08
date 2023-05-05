@@ -8,11 +8,11 @@ namespace GameUnits
     // É  abstract porque num jogo 4x não é utilizado uma Unit só base, mas sim 
     // as Units derivadas dessa base. Não podemos criar mais Units,
     // e sim, apenas mais MilitaryUnits e SettlerUnits.
-    public abstract class Unit
+    public class Unit
     {
         private readonly int movement;
         public virtual int Health { get; set; }
-        public abstract float Cost { get; }
+        public virtual float Cost { get; set; }
 
         // Construtor da Unit 
         public Unit(int movement, int health)
