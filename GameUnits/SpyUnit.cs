@@ -20,7 +20,7 @@ namespace GameUnits
         {
             if (unit is SpyUnit)
                 XP += 3;
-            if (unit is MilitaryUnit)
+            else if (unit is MilitaryUnit)
                 XP += 2;
             else
                 XP++;
